@@ -1,7 +1,7 @@
 ## Process this file with automake to produce Makefile.in
 
 # set the include path found by configure
-gpicview_CPPFLAGS = $(all_includes) \
+inhulview_CPPFLAGS = $(all_includes) \
 	$(X11_CFLAGS) \
         $(GTK_CFLAGS) \
         $(ADDITIONAL_FLAGS) \
@@ -9,9 +9,9 @@ gpicview_CPPFLAGS = $(all_includes) \
 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
 
-bin_PROGRAMS = gpicview
-gpicview_SOURCES = \
-	gpicview.c \
+bin_PROGRAMS = inhulview
+inhulview_SOURCES = \
+	inhulview.c \
 	image-list.c \
 	main-win.c \
 	image-view.c \
@@ -27,7 +27,7 @@ gpicview_SOURCES = \
 
 # the library search path.
 # use -nodefaultlibs to prevent linking libstdc++
-gpicview_LDADD = $(X11_LIBS) $(GTK_LIBS) -lm
+inhulview_LDADD = $(X11_LIBS) $(GTK_LIBS) -lm
 
 noinst_HEADERS = \
 	glib-mem.h \

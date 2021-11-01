@@ -43,7 +43,7 @@ static GOptionEntry opt_entries[] =
     { NULL }
 };
 
-#define PIXMAP_DIR        PACKAGE_DATA_DIR "/gpicview/pixmaps/"
+#define PIXMAP_DIR        PACKAGE_DATA_DIR "/inhulview/pixmaps/"
 
 int main(int argc, char *argv[])
 {
@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
 
     if( should_display_version )
     {
-        printf( "gpicview %s\n", VERSION );
+        printf( "inhulview %s\n", VERSION );
         return 0;
     }
 

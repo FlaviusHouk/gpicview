@@ -1,4 +1,4 @@
-PCMan (Hong Jen Yee) <pcman.tw@gmail.com> (lead developer)
+PCMan (Hong Jen Yee) <pcman.tw@gmail.com> (gpicview original lead developer)
 Martin Siggel <martinsiggel@googlemail.com> (jpeg rotation)
 Hialan Liu <hialan.liu@gmail.com>
 Marty Jack <martyj19@comcast.net> (many bug fixes)
@@ -13,3 +13,4 @@ The icons of "Rotate clockwise & counterclockwise" was taken from nuoveXT 2
 icon theme by Alexandre Moore, which is released under LGPL.
 
 Slideshow code based on a patch from Puppy Linux by Will Davies.
+Flavius Houk (Vladyslav Stovmanenko) <flaviusglamfenix@gmail.com> (lead developer for InhulView)

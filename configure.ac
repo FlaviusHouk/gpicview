@@ -1,6 +1,6 @@
 dnl Process this file with autoconf to produce a configure script.
 
-AC_INIT([gpicview],[0.2.5],[],[gpicview])
+AC_INIT([inhulview],[0.2.6],[],[inhulview])
 # Autotols programs
 AM_INIT_AUTOMAKE([1.10 -Wall -Werror foreign no-dist-gzip dist-xz])
 AM_MAINTAINER_MODE
@@ -75,7 +75,7 @@ do
     echo $lang >> $srcdir/po/LINGUAS
 done
 
-GETTEXT_PACKAGE=gpicview
+GETTEXT_PACKAGE=inhulview
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
 

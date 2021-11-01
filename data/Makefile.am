@@ -4,19 +4,19 @@ PIXMAPS_FILES = \
 	pixmaps/object-flip-horizontal.png \
 	pixmaps/object-flip-vertical.png
 
-gpicview_DATA = 
-gpicviewdir = $(datadir)/gpicview
+inhulview_DATA = 
+inhulviewdir = $(datadir)/inhulview
 
 pixmaps_DATA = $(PIXMAPS_FILES)
-pixmapsdir = $(gpicviewdir)/pixmaps
+pixmapsdir = $(inhulviewdir)/pixmaps
 
 ui_in_files = \
 	pref-dlg.ui
 ui_DATA = $(ui_in_files)
-uidir=$(datadir)/gpicview/ui
+uidir=$(datadir)/inhulview/ui
 
 EXTRA_DIST = \
-	$(gpicview_DATA) \
+	$(inhulview_DATA) \
 	$(pixmaps_DATA) \
 	$(ui_DATA)
 

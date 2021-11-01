@@ -30,8 +30,8 @@
 #include "pref.h"
 #include "main-win.h"
 
-#define CFG_DIR    "gpicview"
-#define CFG_FILE    CFG_DIR"/gpicview.conf"
+#define CFG_DIR    "inhulview"
+#define CFG_FILE    CFG_DIR"/inhulview.conf"
 
 Pref pref = {0};
 
@@ -166,7 +166,7 @@ static void on_set_default( GtkButton* btn, gpointer user_data )
                 "<b>Are you sure you really want to do this?</b>") );
     if( gtk_dialog_run( (GtkDialog*)dlg ) == GTK_RESPONSE_OK )
     {
-        const char cmd[]="xdg-mime default gpicview.desktop application/x-navi-animation image/bmp image/gif image/x-icns image/jpeg image/png image/x-portable-bitmap image/x-portable-graymap image/x-portable-pixmap image/x-quicktime image/svg+xml image/x-tga image/tiff image/vnd.microsoft.icon image/vnd.zbrush.pcx image/x-pcx image/x-win-bitmap image/wmf image/x-wmf image/x-xbitmap image/x-xpixmap";
+        const char cmd[]="xdg-mime default inhulview.desktop application/x-navi-animation image/bmp image/gif image/x-icns image/jpeg image/png image/x-portable-bitmap image/x-portable-graymap image/x-portable-pixmap image/x-quicktime image/svg+xml image/x-tga image/tiff image/vnd.microsoft.icon image/vnd.zbrush.pcx image/x-pcx image/x-win-bitmap image/wmf image/x-wmf image/x-xbitmap image/x-xpixmap";
         g_spawn_command_line_sync( cmd, NULL, NULL, NULL, NULL );
     }
     gtk_widget_destroy( dlg );
@@ -200,7 +200,7 @@ void edit_preferences( GtkWindow* parent )
               *rotate_exif_only_btn, *slide_delay_spinner, *ask_before_del_btn, *bg_btn, *bg_full_btn;
     GtkBuilder* builder = gtk_builder_new();
     GtkDialog* dlg;
-    gtk_builder_add_from_file(builder, PACKAGE_DATA_DIR "/gpicview/ui/pref-dlg.ui", NULL);
+    gtk_builder_add_from_file(builder, PACKAGE_DATA_DIR "/inhulview/ui/pref-dlg.ui", NULL);
 
     dlg = (GtkDialog*)gtk_builder_get_object(builder, "dlg");
     gtk_window_set_transient_for((GtkWindow*)dlg, parent);

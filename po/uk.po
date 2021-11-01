@@ -33,7 +33,7 @@ msgstr "Почати слайдшоу"
 
 #: ../src/main-win.c:165 ../src/main-win.c:1413 ../gpicview.desktop.in.h:1
 msgid "Image Viewer"
-msgstr "Переглядач зображень GPicview"
+msgstr "Переглядач зображень Inhul View"
 
 #: ../src/main-win.c:267 ../src/main-win.c:1438
 msgid "Previous"
@@ -167,7 +167,7 @@ msgstr "GPicView"
 
 #: ../src/main-win.c:1517
 msgid "Copyright (C) 2007 - 2011"
-msgstr "Всі права застережені (С) 2007 - 2011"
+msgstr "Всі права застережені (С) 2007 - 2021"
 
 #: ../src/main-win.c:1518
 msgid "Lightweight image viewer from LXDE project"

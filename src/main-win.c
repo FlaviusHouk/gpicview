@@ -163,13 +163,13 @@ GtkWidget* main_win_new()
 void main_win_init( MainWin*mw )
 {
     gtk_window_set_title( (GtkWindow*)mw, _("Image Viewer"));
-    if (gtk_icon_theme_has_icon(gtk_icon_theme_get_default(), "gpicview"))
+    if (gtk_icon_theme_has_icon(gtk_icon_theme_get_default(), "inhulview"))
     {
-        gtk_window_set_icon_name((GtkWindow*)mw, "gpicview");
+        gtk_window_set_icon_name((GtkWindow*)mw, "inhulview");
     }
     else
     {
-        gtk_window_set_icon_from_file((GtkWindow*)mw, PACKAGE_DATA_DIR "/icons/hicolor/48x48/apps/gpicview.png", NULL);
+        gtk_window_set_icon_from_file((GtkWindow*)mw, PACKAGE_DATA_DIR "/icons/hicolor/48x48/apps/inhulview.png", NULL);
     }
     gtk_window_set_default_size( (GtkWindow*)mw, 640, 480 );
 
@@ -204,10 +204,10 @@ void main_win_init( MainWin*mw )
 #if GTK_CHECK_VERSION(3, 0, 0)
 #else
     const char scroll_style[]=
-            "style \"gpicview-scroll\" {"
+            "style \"inhulview-scroll\" {"
             "GtkScrolledWindow::scrollbar-spacing=0"
             "}"
-            "class \"GtkScrolledWindow\" style \"gpicview-scroll\"";
+            "class \"GtkScrolledWindow\" style \"inhulview-scroll\"";
     gtk_rc_parse_string( scroll_style );
 #endif
     mw->scroll = gtk_scrolled_window_new( NULL, NULL );
@@ -1520,10 +1520,10 @@ void on_about( GtkWidget* menu, MainWin* mw )
     gtk_container_set_border_width ( ( GtkContainer*)about_dlg , 2 );
     gtk_about_dialog_set_version ( (GtkAboutDialog*)about_dlg, VERSION );
     gtk_about_dialog_set_program_name ( (GtkAboutDialog*)about_dlg, _( "GPicView" ) );
-    gtk_about_dialog_set_logo_icon_name ( (GtkAboutDialog*)about_dlg, "gpicview" );
-    gtk_about_dialog_set_copyright ( (GtkAboutDialog*)about_dlg, _( "Copyright (C) 2007 - 2011" ) );
-    gtk_about_dialog_set_comments ( (GtkAboutDialog*)about_dlg, _( "Lightweight image viewer from LXDE project" ) );
-    gtk_about_dialog_set_license ( (GtkAboutDialog*)about_dlg, "GPicView\n\nCopyright (C) 2007 Hong Jen Yee (PCMan)\n\nThis program is free software; you can redistribute it and/or\nmodify it under the terms of the GNU General Public License\nas published by the Free Software Foundation; either version 2\nof the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program; if not, write to the Free Software\nFoundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA." );
+    gtk_about_dialog_set_logo_icon_name ( (GtkAboutDialog*)about_dlg, "inhulview" );
+    gtk_about_dialog_set_copyright ( (GtkAboutDialog*)about_dlg, _( "Copyright (C) 2007 - 2021" ) );
+    gtk_about_dialog_set_comments ( (GtkAboutDialog*)about_dlg, _( "Lightweight image viewer from InhulDE project (previous gpicview from LXDE project)" ) );
+    gtk_about_dialog_set_license ( (GtkAboutDialog*)about_dlg, "InhulView\n\nCopyright (C) 2007 Hong Jen Yee (PCMan)\n\nCopyright (C) 2021 Vladyslav Stovmanenko (FlaviusHouk)\n\nThis program is free software; you can redistribute it and/or\nmodify it under the terms of the GNU General Public License\nas published by the Free Software Foundation; either version 2\nof the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program; if not, write to the Free Software\nFoundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA." );
     gtk_about_dialog_set_website ( (GtkAboutDialog*)about_dlg, "http://wiki.lxde.org/en/GPicView" );
     gtk_about_dialog_set_authors ( (GtkAboutDialog*)about_dlg, authors );
     gtk_about_dialog_set_translator_credits ( (GtkAboutDialog*)about_dlg, translators );

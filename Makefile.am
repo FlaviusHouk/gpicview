@@ -4,12 +4,12 @@ ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 SUBDIRS = src po data
 
 desktopdir = $(datadir)/applications
-desktop_in_files = gpicview.desktop.in
+desktop_in_files = inhulview.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
 icondir = $(datadir)/icons/hicolor/48x48/apps
-icon_DATA = gpicview.png
+icon_DATA = inhulview.png
 
 EXTRA_DIST = \
 	autogen.sh \
