@@ -33,9 +33,8 @@ fi
 AC_SUBST(ADDITIONAL_FLAGS)
 
 
-AM_GLIB_GNU_GETTEXT
-IT_PROG_INTLTOOL([0.40.0])
-
+AM_GNU_GETTEXT([external])
+AM_GNU_GETTEXT_VERSION([0.19.7])
 AC_ARG_ENABLE(gtk3,
 AS_HELP_STRING([--enable-gtk3],[enable to use gtk-3.0 instead of gtk-2.0]),
 [case "${enableval}" in

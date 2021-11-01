@@ -1,12 +1,11 @@
 ## Process this file with automake to produce Makefile.in
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
-SUBDIRS = src po data
+SUBDIRS = . src po data
 
 desktopdir = $(datadir)/applications
 desktop_in_files = inhulview.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
-@INTLTOOL_DESKTOP_RULE@
 
 icondir = $(datadir)/icons/hicolor/48x48/apps
 icon_DATA = inhulview.png
@@ -37,3 +36,6 @@ dist-hook:
 	    fi \
 	  done \
 	fi
+
+inhulview.desktop: inhulview.desktop.in
+	$(AM_V_GEN)$(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
