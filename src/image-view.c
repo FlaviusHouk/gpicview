@@ -54,7 +54,6 @@ void image_view_init( ImageView* iv )
     iv->pix = NULL;
     iv->scale =  1.0;
     iv->interp_type = GDK_INTERP_BILINEAR;
-    iv->idle_handler = 0;
 #if GTK_CHECK_VERSION(2, 18, 0)
     gtk_widget_set_can_focus((GtkWidget*)iv, TRUE );
     gtk_widget_set_app_paintable((GtkWidget*)iv, TRUE );
@@ -272,9 +271,6 @@ void image_view_paint( ImageView* iv, cairo_t *cr )
         }
 
         cairo_region_destroy (region);
-
-        if( 0 == iv->idle_handler )
-            iv->idle_handler = g_idle_add( (GSourceFunc)on_idle, iv );
     }
 }
 #else
@@ -312,21 +308,12 @@ void image_view_paint( ImageView* iv, GdkEventExpose* evt )
             paint( iv, rects + i, GDK_INTERP_NEAREST );
         }
         g_free( rects );
-
-        if( 0 == iv->idle_handler )
-            iv->idle_handler = g_idle_add( (GSourceFunc)on_idle, iv );
     }
 }
 
 #endif
 void image_view_clear( ImageView* iv )
 {
-    if( iv->idle_handler )
-    {
-        g_source_remove( iv->idle_handler );
-        iv->idle_handler = 0;
-    }
-
     if( iv->pix )
     {
         g_object_unref( iv->pix );
@@ -384,52 +371,6 @@ void image_view_set_scale( ImageView* iv, gdouble new_scale, GdkInterpType type 
 
         gtk_widget_queue_resize( (GtkWidget*)iv );
     }
-}
-
-gboolean on_idle( ImageView* iv )
-{
-    GDK_THREADS_ENTER();
-
-    // FIXME: redraw the whole window everytime is very inefficient
-    // There must be some way to optimize iv. :-(
-    GdkRectangle rect;
-
-    if( G_LIKELY(iv->hadj) )
-    {
-        rect.x = (int)gtk_adjustment_get_value(iv->hadj);
-#if GTK_CHECK_VERSION(2, 14, 0)
-        rect.width = (int)gtk_adjustment_get_page_size(iv->hadj);
-#else
-        rect.width = (int)iv->hadj->page_size;
-#endif
-    }
-    else
-    {
-        rect.x = iv->allocation.x;
-        rect.width = iv->allocation.width;
-    }
-
-    if( G_LIKELY(iv->vadj) )
-    {
-        rect.y = (int)gtk_adjustment_get_value(iv->vadj);
-#if GTK_CHECK_VERSION(2, 14, 0)
-        rect.height = (int)gtk_adjustment_get_page_size(iv->vadj);
-#else
-        rect.height = (int)iv->vadj->page_size;
-#endif
-    }
-    else
-    {
-        rect.y = iv->allocation.y;
-        rect.height = iv->allocation.height;
-    }
-
-    paint( iv, &rect, iv->interp_type );
-
-    GDK_THREADS_LEAVE();
-
-    iv->idle_handler = 0;
-    return FALSE;
 }
 
 void calc_image_area( ImageView* iv )

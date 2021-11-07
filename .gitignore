@@ -58,3 +58,4 @@ debian/gpicview/
 build/**
 intl/**
 ABOUT-NLS
+.vscode/**

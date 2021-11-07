@@ -51,7 +51,6 @@ typedef struct _ImageView
 //    bool cached;
     gdouble scale;
     GdkInterpType interp_type;
-    guint idle_handler;
     GdkRectangle img_area;
     GtkAllocation allocation;
 }ImageView;
