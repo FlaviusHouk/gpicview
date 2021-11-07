@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-23 14:36+0200\n"
+"POT-Creation-Date: 2021-11-03 23:15+0200\n"
 "PO-Revision-Date: 2015-08-17 01:28+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: Tatar <>\n"
@@ -18,105 +18,104 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1439774892.001327\n"
 
-#: ../src/gpicview.c:38
+#: src/inhulview.c:38
 msgid "[FILE]"
 msgstr "[ФАЙЛ]"
 
-#: ../src/gpicview.c:40
+#: src/inhulview.c:40
 msgid "Print version information and exit"
 msgstr "Юрама турында мәгълуматны күрсәтү һәм чыгу"
 
-#: ../src/gpicview.c:42
+#: src/inhulview.c:42
 msgid "Start slideshow"
 msgstr "Слайдшоуны җибәрү"
 
-#: ../src/main-win.c:165 ../src/main-win.c:1413 ../gpicview.desktop.in.h:1
+#: src/main-win.c:165 src/main-win.c:1430 inhulview.desktop.in:12
 msgid "Image Viewer"
 msgstr "Рәсем күрсәтүчесе"
 
-#: ../src/main-win.c:267 ../src/main-win.c:1438
+#: src/main-win.c:274 src/main-win.c:1455
 msgid "Previous"
 msgstr "Алдынгы"
 
-#: ../src/main-win.c:268 ../src/main-win.c:1439
+#: src/main-win.c:275 src/main-win.c:1456
 msgid "Next"
 msgstr "Алдагы"
 
-#: ../src/main-win.c:269 ../src/main-win.c:754
+#: src/main-win.c:276 src/main-win.c:771
 msgid "Start Slideshow"
 msgstr "Слайдшоуны җибәрү"
 
-#: ../src/main-win.c:273 ../src/main-win.c:1442
+#: src/main-win.c:280 src/main-win.c:1459
 msgid "Zoom Out"
 msgstr "Кечерәйтү"
 
-#: ../src/main-win.c:274 ../src/main-win.c:1443
+#: src/main-win.c:281 src/main-win.c:1460
 msgid "Zoom In"
 msgstr "Зурайту"
 
 # Этот перевод мне не нравится.
-#. percent = gtk_entry_new();    // show scale (in percentage)
-#. g_signal_connect( percent, "activate", G_CALLBACK(on_percentage), mw );
-#. gtk_widget_set_size_request( percent, 45, -1 );
-#. gtk_box_pack_start( (GtkBox*)nav_bar, percent, FALSE, FALSE, 2 );
-#: ../src/main-win.c:281 ../src/main-win.c:1444
+#: src/main-win.c:288 src/main-win.c:1461
 msgid "Fit Image To Window Size"
 msgstr "Рәсемне тәрәзәгә сыйдыру"
 
-#: ../src/main-win.c:283 ../src/main-win.c:1445
+#: src/main-win.c:290 src/main-win.c:1462
 msgid "Original Size"
 msgstr "Үз зурлыгы"
 
-#: ../src/main-win.c:290 ../src/main-win.c:1447
+#: src/main-win.c:297 src/main-win.c:1464
 msgid "Full Screen"
 msgstr "Бөтен экранга"
 
-#: ../src/main-win.c:294 ../src/main-win.c:1449
+#: src/main-win.c:301 src/main-win.c:1466
 msgid "Rotate Counterclockwise"
 msgstr "Сәгать теленә каршы бору"
 
-#: ../src/main-win.c:295 ../src/main-win.c:1450
+#: src/main-win.c:302 src/main-win.c:1467
 msgid "Rotate Clockwise"
 msgstr "Сәгать теле буенча бору"
 
-#: ../src/main-win.c:297 ../src/main-win.c:1451
+#: src/main-win.c:304 src/main-win.c:1468
 msgid "Flip Horizontal"
 msgstr "Горизонталь буенча әйләндерү"
 
-#: ../src/main-win.c:298 ../src/main-win.c:1452
+#: src/main-win.c:305 src/main-win.c:1469
 msgid "Flip Vertical"
 msgstr "Вертикаль буенча әйләндерү"
 
-#: ../src/main-win.c:302 ../src/main-win.c:1454
+#: src/main-win.c:309 src/main-win.c:1471
 msgid "Open File"
 msgstr "Файлны ачу"
 
-#: ../src/main-win.c:303 ../src/main-win.c:1455
+#: src/main-win.c:310 src/main-win.c:1472
 msgid "Save File"
 msgstr "Файлны саклау"
 
-#: ../src/main-win.c:304
+#: src/main-win.c:311
 msgid "Save File As"
 msgstr "Файлны ... итеп саклау"
 
-#. PTK_IMG_MENU_ITEM( N_("Save As Other Size"), GTK_STOCK_SAVE_AS, G_CALLBACK(on_save_as), GDK_A, 0 ),
-#: ../src/main-win.c:305 ../src/main-win.c:1458
+#: src/main-win.c:312 src/main-win.c:1475
 msgid "Delete File"
 msgstr "Файлны бетерү"
 
-#: ../src/main-win.c:308 ../src/main-win.c:1460 ../data/pref-dlg.ui.h:1
+#: src/main-win.c:315 src/main-win.c:1477 data/pref-dlg.ui:5
 msgid "Preferences"
 msgstr "Көйләүләр"
 
-#: ../src/main-win.c:309 ../src/main-win.c:1464
+#: src/main-win.c:316 src/main-win.c:1481
 msgid "Quit"
 msgstr "Чыгу"
 
-#: ../src/main-win.c:762
+#: src/main-win.c:377
+msgid "Path is wrong. Cannot open file."
+msgstr ""
+
+#: src/main-win.c:779
 msgid "Stop Slideshow"
 msgstr "Слайдшоуны туктату"
 
-#: ../src/main-win.c:1303
+#: src/main-win.c:1320
 msgid ""
 "The file name you selected already exists.\n"
 "Do you want to overwrite existing file?\n"
@@ -126,11 +125,11 @@ msgstr ""
 "Сез чыннан да бу файлны яңадан яздырасыгыз киләме?\n"
 "(Киcәтү: Булган рәсемнең сыйфаты югалуы ихтимал)"
 
-#: ../src/main-win.c:1344
+#: src/main-win.c:1361
 msgid "Writing this image format is not supported."
 msgstr "Бу рәсем форматын язу якланмый."
 
-#: ../src/main-win.c:1382
+#: src/main-win.c:1399
 msgid ""
 "Are you sure you want to delete current file?\n"
 "\n"
@@ -140,40 +139,44 @@ msgstr ""
 "\n"
 "Кисәтү: Бетерелгән файлны кайтарып булмаячак."
 
-#: ../src/main-win.c:1440
+#: src/main-win.c:1457
 msgid "Start/Stop Slideshow"
 msgstr "Слайдшоуны җибәрү/туктату"
 
-#: ../src/main-win.c:1456
+#: src/main-win.c:1473
 msgid "Save As"
 msgstr "... итеп саклау"
 
-#: ../src/main-win.c:1461
+#: src/main-win.c:1478
 msgid "Show/Hide toolbar"
 msgstr ""
 
-#: ../src/main-win.c:1505
+#: src/main-win.c:1522
 msgid " * Refer to source code of EOG image viewer and GThumb"
 msgstr " * EOG һәм GThumb чыганак кодын кара"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/main-win.c:1509
+#: src/main-win.c:1526
 msgid "translator-credits"
 msgstr "Ainur Shakirov <ainur.shakirov.tt@gmail.com>"
 
-#: ../src/main-win.c:1515
+#: src/main-win.c:1532
 msgid "GPicView"
 msgstr "GPicView"
 
-#: ../src/main-win.c:1517
-msgid "Copyright (C) 2007 - 2011"
+#: src/main-win.c:1534
+#, fuzzy
+msgid "Copyright (C) 2007 - 2021"
 msgstr "Copyright (C) 2007 - 2011"
 
-#: ../src/main-win.c:1518
-msgid "Lightweight image viewer from LXDE project"
+#: src/main-win.c:1535
+#, fuzzy
+msgid ""
+"Lightweight image viewer from InhulDE project (previous gpicview from LXDE "
+"project)"
 msgstr "LXDE проекты өчен җиңел рәсем күрсәтүчесе"
 
-#: ../src/pref.c:164
+#: src/pref.c:164
 msgid ""
 "GPicView will become the default viewer for all supported image files on "
 "your system.\n"
@@ -186,19 +189,19 @@ msgstr ""
 "\n"
 "<b>Сез моны чыннан да телисезме?</b>"
 
-#: ../src/file-dlgs.c:62
+#: src/file-dlgs.c:62
 msgid "All Supported Images"
 msgstr "Барлык якланган рәсемнәр"
 
-#: ../src/file-dlgs.c:67
+#: src/file-dlgs.c:67
 msgid "All Files"
 msgstr "Барлык файллар"
 
-#: ../src/file-dlgs.c:103
+#: src/file-dlgs.c:103
 msgid "JPEG Quality:"
 msgstr "JPEG сыйфаты:"
 
-#: ../src/file-dlgs.c:104
+#: src/file-dlgs.c:104
 msgid ""
 "Lower quality values yield smaller file sizes,\n"
 "but the image quality will be poorer."
@@ -206,11 +209,11 @@ msgstr ""
 "Сыйфат кимрәк булган саен файл зурлыгы кими,\n"
 "ләкин рәсем сүрәте бозылачак."
 
-#: ../src/file-dlgs.c:121
+#: src/file-dlgs.c:122
 msgid "PNG Compression Level:"
 msgstr "PNG кысылу дәрәҗәсе:"
 
-#: ../src/file-dlgs.c:122
+#: src/file-dlgs.c:123
 msgid ""
 "Higher compression levels yield smaller file sizes,\n"
 "but takes more time to do the compression."
@@ -218,23 +221,27 @@ msgstr ""
 "Кысылу дәрәҗәсе зуррак булган саен файл зурлыгы кими,\n"
 "ләкин кысу өчен күбрәк вакыт тотылачак."
 
-#: ../gpicview.desktop.in.h:2
+#: inhulview.desktop.in:11
+msgid "Inhul View"
+msgstr ""
+
+#: inhulview.desktop.in:13
 msgid "View your images easily"
 msgstr "Үз рәсемнәрегезне җиңел итеп карагыз"
 
-#: ../data/pref-dlg.ui.h:2
+#: data/pref-dlg.ui:14
 msgid "Ask before saving images"
 msgstr "Рәсемне саклаганчы раслауны сорау"
 
-#: ../data/pref-dlg.ui.h:3
+#: data/pref-dlg.ui:27
 msgid "Ask before deleting images"
 msgstr "Рәсемне бетергәнче раслауны сорау"
 
-#: ../data/pref-dlg.ui.h:4
+#: data/pref-dlg.ui:40
 msgid "Automatically save rotated images"
 msgstr "Борылган рәсемнәрне автоматик саклау"
 
-#: ../data/pref-dlg.ui.h:5
+#: data/pref-dlg.ui:53
 msgid ""
 "Rotate JPEG file by changing EXIF orientation value\n"
 "(only if EXIF orientation tag exists)"
@@ -242,26 +249,26 @@ msgstr ""
 "EXIF ориентация санын үзгәртеп JPEG файлын бору\n"
 "(EXIF ориентация көйләве генә булса)"
 
-#: ../data/pref-dlg.ui.h:7
+#: data/pref-dlg.ui:71
 msgid "Slideshow interval"
 msgstr "Сладшоуның вакыт арасы"
 
-#: ../data/pref-dlg.ui.h:8
+#: data/pref-dlg.ui:92
 msgid "sec"
 msgstr "сек"
 
-#: ../data/pref-dlg.ui.h:9
+#: data/pref-dlg.ui:105
 msgid "Make GPicView the default viewer for images"
 msgstr "GPicView'ны рәсемнәр өчен үрнәк күрсәтүчесе итеп теркәү"
 
-#: ../data/pref-dlg.ui.h:10
+#: data/pref-dlg.ui:131
 msgid "Normal:"
 msgstr "Гадәти:"
 
-#: ../data/pref-dlg.ui.h:11
+#: data/pref-dlg.ui:152
 msgid "Fullscreen:"
 msgstr "Бөтен экранга:"
 
-#: ../data/pref-dlg.ui.h:12
+#: data/pref-dlg.ui:177
 msgid "<b>Background colors</b>"
 msgstr "<b>Җирлек төсләре</b>"

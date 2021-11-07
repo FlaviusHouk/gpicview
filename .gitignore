@@ -55,3 +55,6 @@ debian/files
 debian/*.log
 debian/*.substvars
 debian/gpicview/
+build/**
+intl/**
+ABOUT-NLS

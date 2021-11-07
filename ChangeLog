@@ -1,3 +1,22 @@
+2021-11-07 Flavius Houk <flaviusglamfenix@gmail.com>
+	* remove intltool build dependency.
+
+2021-11-02 Flavius Houk <flaviusglamfenix@gmail.com>
+	* src/image-view.c: Implement #108 item 
+	(https://sourceforge.net/p/lxde/bugs/108/).
+	Mouse position is used on zooming to leave current position
+	in focus.
+	* src/main-win.c: fix bug #150
+	(https://sourceforge.net/p/lxde/bugs/150/)
+	Corresponding message is shown in case wrong file name was
+	passed.
+	* src/main-win.c: fix bug #230
+	(https://sourceforge.net/p/lxde/bugs/230/)
+	Handle state of zoom-fit button properly.
+	* src/image-list.c: fix bug #429
+	(https://sourceforge.net/p/lxde/bugs/429/)
+	Process invalid folder names correctly.
+
 2021-11-01  Flavius Houk <flaviusglamfenix@gmail.com>
 	Fork for original gpicview code base.
 

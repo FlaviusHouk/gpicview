@@ -7,6 +7,7 @@ inhulview_CPPFLAGS = $(all_includes) \
         $(ADDITIONAL_FLAGS) \
 	-I$(top_srcdir) \
 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
+	-DLOCALEDIR=\"$(localedir)\" \
 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
 
 bin_PROGRAMS = inhulview
